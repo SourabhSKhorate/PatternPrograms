@@ -1,0 +1,1550 @@
+=======================================================================================================================
+
+Name:- Sourabh Khorate
+Topic:- Different Pattern Programs.
+IDE:- Eclipse
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q1{
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print("* ");
+			}System.out.println();
+		}
+	}
+
+}
+
+
+//Output:-
+//
+//* * * * * 
+//* * * * * 
+//* * * * * 
+//* * * * * 
+//* * * * *
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q2 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print(j+" ");
+			}System.out.println();
+		}
+	}
+
+}
+
+//Output:-
+//
+//1 2 3 4 5 
+//1 2 3 4 5 
+//1 2 3 4 5 
+//1 2 3 4 5 
+//1 2 3 4 5 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q3 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print(j%2 + " ");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+//Output:-
+//
+//1 0 1 0 1 
+//1 0 1 0 1 
+//1 0 1 0 1 
+//1 0 1 0 1 
+//1 0 1 0 1 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q4 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print(i%2 + " ");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+
+//Output:-
+//
+//1 1 1 1 1 
+//0 0 0 0 0 
+//1 1 1 1 1 
+//0 0 0 0 0 
+//1 1 1 1 1 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q5 {
+	public static void main(String[] args) {
+//		Scanner sc= new Scanner(System.in);
+//		System.out.println("Enter A Number");
+//		int n = sc.nextInt();
+		
+		int n=5;
+		int k=1;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print(k%2 +" ");
+				k++;
+			}
+		System.out.println();
+		}
+	}
+
+}
+
+
+//Output:-
+//
+//1 0 1 0 1 
+//0 1 0 1 0 
+//1 0 1 0 1 
+//0 1 0 1 0 
+//1 0 1 0 1 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q6 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print((char)(64+i) +" ");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+//
+//Output:-
+//
+//A A A A A 
+//B B B B B 
+//C C C C C 
+//D D D D D 
+//E E E E E 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q7 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=1; i<=n;i++) {
+			for(int j=n;j>=1;j--) {
+				System.out.print((char)(64+j) + (" "));
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+
+//Output:-
+//
+//E D C B A 
+//E D C B A 
+//E D C B A 
+//E D C B A 
+//E D C B A 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q8 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=1; i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1 || i==n || j==1 || j==n) {
+					System.out.print("* ");
+				}else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+
+//Output:-
+//
+//* * * * * 
+//*       * 
+//*       * 
+//*       * 
+//* * * * * 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q9 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for (int i=1; i<=n; i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1 || j==1 || i==n || j==n || i==j || i+j==n+1) {
+					System.out.print("* ");
+				}else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+
+//Output:-
+//
+//* * * * * 
+//* *   * * 
+//*   *   * 
+//* *   * * 
+//* * * * *
+ 
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q10 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for (int i=1; i<=n; i++) {
+			for(int j=1; j<=i;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//Output :-
+//
+//* 
+//* * 
+//* * * 
+//* * * * 
+//* * * * * 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q11 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for (int i=1; i<=n; i++) {
+			for(int j=1; j<=i;j++) {
+				System.out.print(j + " ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//Output:-
+
+//1 
+//1 2 
+//1 2 3 
+//1 2 3 4 
+//1 2 3 4 5 
+
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q12 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1; j<=i;j++) {
+				System.out.print(j%2+" ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+//Output:-
+
+//1 
+//1 0 
+//1 0 1 
+//1 0 1 0 
+//1 0 1 0 1 
+
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q13 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print(i%2 +" ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//Output:-
+
+//1 
+//0 0 
+//1 1 1 
+//0 0 0 0 
+//1 1 1 1 1 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q14 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=1; i<=n;i++) {
+			for(int j=i;j>=1;j--) {
+				System.out.print(j+" ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+//Output:-
+//
+//1 
+//2 1 
+//3 2 1 
+//4 3 2 1 
+//5 4 3 2 1 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q15 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=n;i>=1;i--) {
+			for(int j=i;j<=n;j++) {
+				System.out.print(j+" ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+//Output:-
+//
+//5 
+//4 5 
+//3 4 5 
+//2 3 4 5 
+//1 2 3 4 5 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q16 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=n;i>=1;i--) {
+			for(int j=n;j>=i;j--) {
+				System.out.print(j+ " ");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+//Output:-
+//
+//5 
+//5 4 
+//5 4 3 
+//5 4 3 2 
+//5 4 3 2 1
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q17 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print((char)(96+j) +" ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+//Output:-
+
+//a 
+//a b 
+//a b c 
+//a b c d 
+//a b c d e 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q18 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=n;i>=1;i--) {
+			for(int j=n;j>=i;j--) {
+				System.out.print((char)(96+j) +" ");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+
+//Output:-
+//
+//e 
+//e d 
+//e d c 
+//e d c b 
+//e d c b a 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q19 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				if(j==1 || i==n || i==j) {
+				System.out.print("*" +" ");
+				}else {
+					System.out.print("#"+ " ");
+				}
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//Output:-
+//
+//* 
+//* * 
+//* # * 
+//* # # * 
+//* * * * * 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q20 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n = sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n-i;j++) {
+				System.out.print("  ");
+			}
+				for(int k=1;k<=i;k++) {
+					System.out.print("* ");
+				}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//Output:-
+//
+//        * 
+//      * * 
+//    * * * 
+//  * * * * 
+//* * * * * 
+
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q21 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		for(int i=1;i<=5;i++) {
+			for(int j=1;j<=n-i;j++) {
+				System.out.print("  ");
+			}
+			for(int k=1;k<=i;k++) {
+				System.out.print(k+" ");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+
+//Output:-
+//
+//        1 
+//      1 2 
+//    1 2 3 
+//  1 2 3 4 
+//1 2 3 4 5 
+
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q22 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		for(int i=n;i>=1;i--) {
+			for(int j=1;j<=i-1;j++) {
+				System.out.print("  ");
+			}
+			for(int k=n;k>=i;k--) {
+				System.out.print(k+" ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//Output:-
+//
+//        5 
+//      5 4 
+//    5 4 3 
+//  5 4 3 2 
+//5 4 3 2 1 
+
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q23 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		for(int i=n;i>=1;i--) {
+			for(int j=1;j<=i-1;j++) {
+				System.out.print("  ");
+			}
+			for(int k=i;k<=n;k++) {
+				System.out.print(k+" ");
+			}
+			System.out.println();
+		}
+
+
+	}
+
+}
+
+//Output:-
+//
+//        5 
+//      4 5 
+//    3 4 5 
+//  2 3 4 5 
+//1 2 3 4 5 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q24 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		for(int i=n;i>=1;i--) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//Output:-
+//
+//* * * * * 
+//* * * * 
+//* * * 
+//* * 
+//* 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q25 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		int k=1;
+		for(int i=n;i>=1;i--) {
+			for(int j=n;j>=k;j--) {
+				System.out.print(j +" ");
+			}
+			k++;
+			System.out.println();
+		}
+	}
+
+}
+
+//Output:-
+//
+//5 4 3 2 1 
+//5 4 3 2 
+//5 4 3 
+//5 4 
+//5 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q26 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n-i;j++) {
+				System.out.print("  ");
+			}
+			int prod=1;
+			for(int k=1;k<=i;k++){
+				System.out.print(k+" ");
+				if(k<i) {
+					System.out.print("* ");
+				}
+				prod=prod*k;
+			}
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("  ");
+			}
+			System.out.print(" = "+ prod);
+			
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//Output:-
+//
+//        1          = 1
+//      1 * 2        = 2
+//    1 * 2 * 3      = 6
+//  1 * 2 * 3 * 4    = 24
+//1 * 2 * 3 * 4 * 5  = 120
+
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q27 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		for(int i=1; i<=n; i++) {
+			for(int j=1; j<=n-i; j++) {
+				System.out.print("  ");
+			}
+			
+			int sum=0;
+			for(int k=1; k<=i; k++) {
+				System.out.print(k +" ");
+				if(k<i) {
+					System.out.print("+ ");
+				}
+				sum=sum+k;
+			}
+			for(int s=1; s<=n-i; s++) {
+				System.out.print("  ");
+			}
+			System.out.print(" = " + sum);
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//Output:-
+//
+//        1          = 1
+//      1 + 2        = 3
+//    1 + 2 + 3      = 6
+//  1 + 2 + 3 + 4    = 10
+//1 + 2 + 3 + 4 + 5  = 15
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q28 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		//int k=1;
+		for(int i=n; i>=1; i--) {
+			for(int j=1; j<=n-i; j++) {
+				System.out.print("  ");
+			}
+			for(int k=1;k<=i;k++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+
+//Output:-
+//
+//* * * * * 
+//  * * * * 
+//    * * * 
+//      * * 
+//        * 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q29 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("  ");
+			}
+			for(int j=1;j<=i;j++) {
+				System.out.print("* ");
+			}
+			for(int j=1;j<=i-1;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+
+//Output:-
+//
+//        * 
+//      * * * 
+//    * * * * * 
+//  * * * * * * * 
+//* * * * * * * * * 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q30 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("  ");
+			}
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//Output:-
+//
+//        * 
+//      * * * 
+//    * * * * * 
+//  * * * * * * * 
+//* * * * * * * * * 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q31 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("  ");
+			}
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print(i%2+" ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//Output:-
+//
+//        1 
+//      0 0 0 
+//    1 1 1 1 1 
+//  0 0 0 0 0 0 0 
+//1 1 1 1 1 1 1 1 1 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q32 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		int k=1;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("  ");
+			}
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print(k%2+" ");
+				k++;
+			}
+			System.out.println();
+		}
+	}
+	
+}
+
+
+//Output:-
+//
+//        1 
+//      0 1 0 
+//    1 0 1 0 1 
+//  0 1 0 1 0 1 0 
+//1 0 1 0 1 0 1 0 1 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q33 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("  ");
+			}
+			int k=1;
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print(k+" ");
+			
+				if(j<i) {
+					k++;
+				}else {
+					k--;
+				}
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//Output:-
+//
+//        1 
+//      1 2 1 
+//    1 2 3 2 1 
+//  1 2 3 4 3 2 1 
+//1 2 3 4 5 4 3 2 1 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q34 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		for(int i=1; i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("  ");
+			}
+			int k=i;
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print(k +" ");
+				if(j<i) {
+					k--;
+				}else {
+					k++;
+				}
+			}
+			System.out.println();
+		}
+
+	}
+}
+
+//Output:-
+//
+//        1 
+//      2 1 2 
+//    3 2 1 2 3 
+//  4 3 2 1 2 3 4 
+//5 4 3 2 1 2 3 4 5 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q35 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		for(int i=n;i>=1;i--) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("  ");
+			}
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+//  Output:-
+
+//* * * * * * * * * 
+//  * * * * * * * 
+//    * * * * * 
+//      * * * 
+//        * 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q36 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n= sc.nextInt();
+		
+		//int n=5;
+		for(int i=n;i>=1;i--) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("  ");
+			}
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("  ");
+			}
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+// Output:-
+
+//* * * * * * * * * 
+//  * * * * * * * 
+//    * * * * * 
+//      * * * 
+//        * 
+//        * 
+//      * * * 
+//    * * * * * 
+//  * * * * * * * 
+//* * * * * * * * * 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q37 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n=sc.nextInt();
+		
+		int st=1;
+		int sp=n/2;
+		
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print("  ");
+			}
+			for(int j=1;j<=st;j++) {
+				System.out.print("* ");
+			}
+			if(i<=n/2) {
+				st=st+2;
+				sp--;
+			}else {
+				st=st-2;
+				sp++;
+			}
+			System.out.println();
+		}
+		
+	}
+
+}
+
+// Output:-
+
+//      * 
+//    * * * 
+//  * * * * * 
+//* * * * * * * 
+//  * * * * * 
+//    * * * 
+//      * 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q38 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n=sc.nextInt();
+		
+		int st=1;
+		int sp=n/2;
+		
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print("  ");
+			}
+			for(int j=1;j<=st;j++) {
+				System.out.print(i%2+" ");
+			}
+			if(i<=n/2) {
+				sp--;
+				st=st+2;
+			}else {
+				sp++;
+				st=st-2;
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+//Ouput:-
+
+//      1 
+//    0 0 0 
+//  1 1 1 1 1 
+//0 0 0 0 0 0 0 
+//  1 1 1 1 1 
+//    0 0 0 
+//      1 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q39 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n=sc.nextInt();
+		
+		int st=1;
+		int sp=n/2;
+		
+		
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print("  ");
+			}
+			int k=1;
+			for(int j=1;j<=st;j++) {
+				System.out.print(k%2+" ");
+				k++;
+			}
+			if(i<=n/2) {
+				sp--;
+				st=st+2;
+			}else {
+				sp++;
+				st=st-2;
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//Output:-
+
+//      1 
+//    1 0 1 
+//  1 0 1 0 1 
+//1 0 1 0 1 0 1 
+//  1 0 1 0 1 
+//    1 0 1 
+//      1 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q40 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n=sc.nextInt();
+		
+		int st=1;
+		int sp=n/2;
+		
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print("  ");
+			}
+			int k=1;
+			for(int j=1;j<=st;j++) {
+				System.out.print(k+" ");
+				if(j<=st/2) {
+					k++;
+				}else {
+					k--;
+				}
+			}
+				if(i<=n/2) {
+					sp--;
+					st=st+2;
+				}else {
+					sp++;
+					st=st-2;
+				}
+				System.out.println();
+		}
+	}
+
+}
+
+//Output:-
+
+//      1 
+//    1 2 1 
+//  1 2 3 2 1 
+//1 2 3 4 3 2 1 
+//  1 2 3 2 1 
+//    1 2 1 
+//      1 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q41 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n=sc.nextInt();
+		
+		int st=1;
+		int sp=n/2;
+		
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print("  ");
+			}
+			int k=st/2+1;
+			for(int j=1;j<=st;j++) {
+				System.out.print(k+" ");
+				if(j<=st/2) {
+					k--;
+				}else {
+					k++;
+				}
+			}
+				if(i<=n/2) {
+					sp--;
+					st=st+2;
+				}else {
+					sp++;
+					st=st-2;
+				}
+				System.out.println();
+		}
+
+	}
+
+}
+
+//Output:-
+
+//      1 
+//    2 1 2 
+//  3 2 1 2 3 
+//4 3 2 1 2 3 4 
+//  3 2 1 2 3 
+//    2 1 2 
+//      1 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q42 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n=sc.nextInt();
+		
+		int st=1;
+		int sp=n/2;
+		
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print("  ");
+			}
+			int k=sp+1;
+			for(int j=1;j<=st;j++) {
+				System.out.print(k+" ");
+				if(j<=st/2) {
+					k++;
+				}else {
+					k--;
+				}
+			}
+				if(i<=n/2) {
+					sp--;
+					st=st+2;
+				}else {
+					sp++;
+					st=st-2;
+				}
+				System.out.println();
+		}
+
+		
+	}
+
+}
+
+//Output:-
+
+//      4 
+//    3 4 3 
+//  2 3 4 3 2 
+//1 2 3 4 3 2 1 
+//  2 3 4 3 2 
+//    3 4 3 
+//      4 
+
+=======================================================================================================================
+
+import java.util.Scanner;
+
+public class Q43 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter A Number");
+		int n=sc.nextInt();
+		
+		int st=1;
+		int sp=n/2;
+		
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print("  ");
+			}
+			int count=1;
+			for(int j=1;j<=st;j++) {
+				if(count==1 || count==st) {      //if(j==1 || j==st){
+					System.out.print("* ");      //   System.out.print("* ");
+					count++;                     // }else{
+				}else {                          //       Sysout.out.print("  ");
+					System.out.print("  ");      // }
+					count++;
+				}
+			}
+				if(i<=n/2) {
+					sp--;
+					st=st+2;
+				}else {
+					sp++;
+					st=st-2;
+				}
+				System.out.println();
+		}
+
+
+	}
+
+}
+
+//Output:-
+
+//      * 
+//    *   * 
+//  *       * 
+//*           * 
+//  *       * 
+//    *   * 
+//      * 
+
+=======================================================================================================================
+=======================================================================================================================
+
